@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "img0001.png" type = "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Home</title>
+    <script>
+        function logout() {
+            window.location = "login.html";
+        }
+        function basic() {
+          window.location = "signup.html";
+      }
+        function photos1(){
+          window.location = "icon.html";
+        }
+        function photos2(){
+          window.location = "maps.html";
+        }
+        function photos3(){
+          window.location = "chart.html";
+        }
+        function photos4(){
+          window.location.href = "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works";
+        }
+        function photos5(){
+          window.location.href = "https://xd.adobe.com/ideas/principles/web-design/12-dos-donts-web-design-2/";
+        }
+        function photos6(){
+          window.location = "movies.html";
+        }
+    </script>
+    <style>
+      .imgfooter {
+        height: 137px;
+      }
+      .dropdown-menu.dropdown-menu-dark.show {
+        margin: 20px;
+      }
+        .container-fluid {
+            height: 120px;
+          }
+        h1 { 
+            font-family:Arial;
+            font-weight:bold;
+            text-align: center;
+           
+        }
+        a {
+            color: #fffdfd;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight:bold;
+            
+        }
+        .nav-link.active {
+            cursor: pointer;
+        }
+        .navbar-brand {
+          font-size: 60px;
+          background: -webkit-linear-gradient(270deg,#e80808,#d207d6);
+          background-clip: border-box;
+          background-clip: initial;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-style: oblique;
+           font-family: initial;
+        }
+        element {
+          z-index: 3;
+          width: 300px;
+          height: 500px;
+        }
+        #mySidebar {
+          height: 500px;
+        }
+        
+
+        .w-100 {
+          width: 50% !important;
+        } 
+        .carousel-item {
+          position: relative;
+          display: none;
+          float: left;
+          width: 100%;
+          margin-right: -100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          transition: transform .3s ease-in-out;
+        }
+        .btn.btn-primary {
+            background-color: unset;
+            border: none;
+          
+        }
+        .d-block.w-100 {
+          margin: 50px;
+        }
+        .modal {
+          --bs-modal-zindex: 1055;
+          --bs-modal-width: 500px;
+          --bs-modal-padding: 1rem;
+          --bs-modal-margin: 0.5rem;
+          --bs-modal-color: ;
+          --bs-modal-bg: #686868;
+          --bs-modal-border-color: var(--bs-border-color-translucent);
+          --bs-modal-border-width: 1px;
+          --bs-modal-border-radius: 0.5rem;
+          --bs-modal-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          --bs-modal-inner-border-radius: calc(0.5rem - 1px);
+          --bs-modal-header-padding-x: 1rem;
+          --bs-modal-header-padding-y: 1rem;
+          --bs-modal-header-padding: 1rem 1rem;
+          --bs-modal-header-border-color: var(--bs-border-color);
+          --bs-modal-header-border-width: 1px;
+          --bs-modal-title-line-height: 1.5;
+          --bs-modal-footer-gap: 0.5rem;
+          --bs-modal-footer-bg: ;
+          --bs-modal-footer-border-color: var(--bs-border-color);
+          --bs-modal-footer-border-width: 1px;
+        }
+        .w3-white, .w3-hover-white:hover {
+          color: #fff !important;
+          background-color: #20201f !important;
+         
+        }
+        
+        @media only screen and (max-width: 1100px) {
+
+          .photos {
+            vertical-align: middle;
+            width: 100%;
+          }
+          .w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+            color: #dfdada !important;
+            background-color: #131313 !important;
+          }
+          
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img200.png" alt="" width="50px" height="40px" class="d-inline-block align-text-top">
+            Falcon
+          </a>
+        </div>
+    </nav>
+    <br>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img200.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Falcon
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="img200.png" style="width:45%;" class="w3-round"></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" onclick="logout()">Logout</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+              <br>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <body class="w3-light-grey w3-content" style="max-width:1600px"></body>
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container">
+          <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+          </a>
+          <img src="loginlogo.png" style="width:45%;" class="w3-round"><br><br>
+          <h4><b></b></h4>
+        </div>
+        <div class="w3-bar-block">
+          <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>HOME</a> 
+          <a href="profile.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="add_circle fa-fw w3-margin-right"></i>PROFILE</a> 
+          <a href="signup.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class=" w3-margin-right"></i>Sign In</a>
+          <a href="movies.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class=" fa-fw w3-margin-right"></i>Movies</a>
+          <a href="maps.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class=" fa-fw w3-margin-right"></i>Songs</a>
+          <a href="text.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class=" fa-fw w3-margin-right"></i>Message</a>
+          <a href="icon.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class=" fa-fw w3-margin-right"></i>QR Code Generator</a>
+          <a href="chart.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class=" fa-fw w3-margin-right"></i>Charts</a>
+          <a href="upgrade.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class=" fa-fw w3-margin-right"></i>Upgrade to Pro</a>
+          <a href="chat.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class=" fa-fw w3-margin-right"></i>Feedback</a>
+          <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class=" fa-fw w3-margin-right"></i>ABOUT</a>
+          <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class=" fa-fw w3-margin-right"></i>CONTACT</a>
+        </div>
+        <div class="w3-panel w3-large">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </nav>
+      
+      <!-- Overlay effect when opening sidebar on small screens -->
+      <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+      
+      
+      <div class="w3-main" style="margin-left:300px">
+      
+        <!-- Header -->
+        <header id="portfolio">
+          <a href="#"><img src="img200.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+          <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+          <div class="w3-container">
+          <div class="w3-section w3-bottombar w3-padding-16">
+          </div>
+          </div>
+        </header>
+        
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding">
+          <div class="w3-third w3-container w3-margin-bottom" id="photos" onclick="photos1()">
+            <img src="https://codecanyon.img.customer.envatousercontent.com/files/372899039/QR-code-Code-canyon-Banner.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=7359b32d6e1046de344f8cab77698e40" alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <p> <br><b>OR Code Generator</b></p>
+              <p>Upload a list of upto 2,000 URLs to the QR Code generator and instantly download QR Codes for them. Not just that, you can perform a list of bulk operations on your QR Codes. This includes all commercial purposes.</p>
+            </div>
+          </div>
+          <div class="w3-third w3-container w3-margin-bottom" id="photos1" onclick="photos2()">
+            <img src="https://i.ytimg.com/vi/Vzyusi5npJU/maxresdefault.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <p><br><b>Songs  No Copyright Sounds</b></p>
+              <p>The new NCS site is launching shortly... you've probably come here through one of our links we will have this link working soon but in the meantime head over to the Music page.</p>
+            </div>
+          </div>
+          <div class="w3-third w3-container" id="photos3" onclick="photos3()">
+            <img src="https://miro.medium.com/max/1400/1*-Q0xH98vqgUyQ4QMNkPlvA.png"  alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <p><br><b>JS Charts</b></p>
+              <p>js is an free JavaScript library for making HTML-based charts. It is one of the simplest visualization libraries for JavaScript, and comes with the following built-in chart types: Scatter Plot.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding">
+          <div class="w3-third w3-container w3-margin-bottom" id="photos4" onclick="photos4()">
+            <img src="https://www.sitesaga.com/wp-content/uploads/2020/04/what-is-website-how-it-works.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white" id="photos222">
+              <p><br><b>About Website</b></p>
+              <p>A user enters a URL into a browser (for example, Google.com. This request is passed to a domain name server. The domain name server returns an IP address for the server that hosts the Website</p>
+            </div>
+          </div>
+          <div class="w3-third w3-container w3-margin-bottom" id="photos5" onclick="photos5()">
+            <img src="https://cdn2.hubspot.net/hubfs/19610/12GoldenRules-featured-image-790x473.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <p><br><b>Rules Of Web Design</b></p>
+              <p>Web Rules automate actions in response to user activity on your website. You can use web rules to show popups, surveys or forms, Web Rules automate actions in response </p>
+            </div>
+          </div>
+          <div class="w3-third w3-container" id="photos6" onclick="photos6()">
+            <img src="https://trendingnewswala.online/content/images/2022/02/Lkqpd5ZXdtnMqUhwypqB_zgP0qPPtzgDPCKO1qIG9e0.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <p><br><b>Watch Movies For free</b></p>
+              <p>Find with JustWatch all the movies you can watch online on Netflix, iflix, Hooq and 4 other streaming providers. Purchase, rent online & flat-rate Watch the latest movies and bollywood movies online. </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+          <div class="w3-bar">
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+            <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+          </div>
+        </div>
+      
+        <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div  onclick="photos1()" class="photos">
+                  <img src="https://codecanyon.img.customer.envatousercontent.com/files/372899039/QR-code-Code-canyon-Banner.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=7359b32d6e1046de344f8cab77698e40" alt="Norway" width="50%">
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div  onclick="photos2()" class="photos">
+                  <img src="https://i.ytimg.com/vi/Vzyusi5npJU/maxresdefault.jpg" alt="Norway" width="50%">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div  onclick="photos4()" class="photos">
+                  <img src="https://www.sitesaga.com/wp-content/uploads/2020/04/what-is-website-how-it-works.png" alt="Norway" width="50%">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-4">
+              <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-11">Web</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-22">HTML</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-33">CSS</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-44">JS</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                <h4 id="list-item-11"><strong>About Web</strong></h4>
+                <p>The Web is the common name for the World Wide Web, a subset of the Internet consisting of the pages that can be accessed by a Web browser. Many people assume that the Web is the same as the Internet, and use these terms interchangeably. However, the term Internet actually refers to the global network of servers that makes the information sharing that happens over the Web possible. So, although the Web does make up a large portion of the Internet, but they are not one and same</p>
+                <p>Techopedia Explains Web
+
+                  Web pages are formatted in a language called Hypertext Markup Language (HTML). It this language that allows users to click through pages on the Web via links. The Web uses HTTP protocol to transmit data and share information. Browsers such as Internet Explorer, Google Chrome or Mozilla Firefox are used to access Web documents, or Web pages, which are connected via links.
+                  
+                  The Web is just one of the ways that information is shared over the Internet; others include email, instant messaging and File Transfer Protocol (FTP)</p>
+                <h4 id="list-item-22"><strong>HTML</strong></h4>
+                <p>What is HTML?
+
+                  HTML stands for Hyper Text Markup Language
+                  HTML is the standard markup language for creating Web pages
+                  HTML describes the structure of a Web page
+                  HTML consists of a series of elements
+                  HTML elements tell the browser how to display the content
+                  HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+                  Example Explained
+
+                  The DOCTYPE  declaration defines that this document is an HTML5 document
+                  The html element is the root element of an HTML page
+                  The head element contains meta information about the HTML page
+                  The title element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+                  The body element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+                  The h1 element defines a large heading
+                  The p element defines a paragraph
+
+              </p>
+                <h4 id="list-item-33"><strong>CSS</strong></h4>
+                <p>What is CSS?
+
+                  CSS stands for Cascading Style Sheets
+                  CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+                  CSS saves a lot of work. It can control the layout of multiple web pages all at once
+                  External stylesheets are stored in CSS files
+                  Why Use CSS?
+
+                  CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+                  CSS Solved a Big Problem
+
+                  HTML was NEVER intended to contain tags for formatting a web page!
+
+                  HTML was created to describe the content of a web page, like:
+
+
+
+                  When tags like , and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.
+
+                  To solve this problem, the World Wide Web Consortium (W3C) created CSS.
+
+                  CSS removed the style formatting from the HTML page!
+              </p>
+                <h4 id="list-item-44"><strong>JS</strong></h4>
+                <p>What is JavaScript?
+
+                  JavaScript (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.
+                  
+                  JavaScript runs on the client side of the web, which can be used to design / program how the web pages behave on the occurrence of an event. JavaScript is an easy to learn and also powerful scripting language, widely used for controlling web page behavior.
+                  
+                  Contrary to popular misconception, JavaScript is not "Interpreted Java". In a nutshell, JavaScript is a dynamic scripting language supporting prototype based object construction. The basic syntax is intentionally similar to both Java and C++ to reduce the number of new concepts required to learn the language. Language constructs, such as if statements, for and while loops, and switch and try ... catch blocks function the same as in these languages (or nearly so).
+                  
+                  JavaScript can function as both a procedural and an object oriented language. Objects are created programmatically in JavaScript, by attaching methods and properties to otherwise empty objects at run time, as opposed to the syntactic class definitions common in compiled languages like C++ and Java. Once an object has been constructed it can be used as a blueprint (or prototype) for creating similar objects.
+                  
+                  JavaScript's dynamic capabilities include runtime object construction, variable parameter lists, function variables, dynamic script creation (via eval), object introspection (via for ... in), and source code recovery (JavaScript programs can decompile function bodies back into their source text).
+                  
+                  For a more in depth discussion of JavaScript programming follow the JavaScript resources links below.
+                  What JavaScript implementations are available?
+                  
+                  The Mozilla project provides two JavaScript implementations. The first ever JavaScript was created by Brendan Eich at Netscape, and has since been updated to conform to ECMA-262 Edition 5 and later versions. This engine, code named SpiderMonkey, is implemented in C/C++. The Rhino engine, created primarily by Norris Boyd (also at Netscape) is a JavaScript implementation written in Java. Like SpiderMonkey, Rhino is ECMA-262 Edition 5 compliant.
+                  
+                  Several major runtime optimizations such as TraceMonkey (Firefox 3.5), JägerMonkey (Firefox 4) and IonMonkey were added to the SpiderMonkey JavaScript engine over time. Work is always ongoing to improve JavaScript execution performance.
+                  
+                  Besides the above implementations, there are other popular JavaScript engines such as:-
+                  
+                      Google's V8, which is used in the Google Chrome browser and recent versions of Opera browser. This is also the engine used by Node.js.
+                      The JavaScriptCore (SquirrelFish/Nitro) used in some WebKit browsers such as Apple Safari.
+                      Carakan in old versions of Opera.
+                      The Chakra engine used in Internet Explorer (although the language it implements is formally called "JScript" in order to avoid trademark issues).
+                  
+                  Each of Mozilla's JavaScript engines expose a public API which application developers can use to integrate JavaScript into their software. By far, the most common host environment for JavaScript is web browsers. Web browsers typically use the public API to create host objects responsible for reflecting the DOM into JavaScript.
+                  
+                  Another common application for JavaScript is as a (Web) server side scripting language. A JavaScript web server would expose host objects representing a HTTP request and response objects, which could then be manipulated by a JavaScript program to dynamically generate web pages. Node.js is a popular example of this.</p>
+                </div>
+            </div>
+          </div>
+          
+          <h4><strong>Technical Skills</strong> </h4>
+          <!-- Progress bars / Skills -->
+          <p>Web Design</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+          </div>
+          <p>Vedio Editing</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+          </div>
+          <p>Photoshop</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+          </div>
+         
+          <hr>
+          
+          <h4><strong>Best Plan for You</strong></h4>
+          <!-- Pricing Tables -->
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-third w3-margin-bottom">
+              <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+                <li class="w3-padding-16">Web Design</li>
+                <li class="w3-padding-16">Vedio Editing</li>
+                <li class="w3-padding-16">Photoshop</li>
+                <li class="w3-padding-16">1GB Storage</li>
+                <li class="w3-padding-16">Mail Support</li>
+                <li class="w3-padding-16">
+                  <h2>₹ 10</h2>
+                  <span class="w3-opacity">per month</span>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                  <button class="w3-button w3-teal w3-padding-large w3-hover-black" onclick="basic()" href="signup.html">Sign Up</button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="w3-third w3-margin-bottom">
+              <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                <li class="w3-teal w3-xlarge w3-padding-32">Pro</li>
+                <li class="w3-padding-16">Web Design</li>
+                <li class="w3-padding-16">Vedio Editing</li>
+                <li class="w3-padding-16">Photoshop</li>
+                <li class="w3-padding-16">50GB Storage</li>
+                <li class="w3-padding-16">Endless Support</li>
+                <li class="w3-padding-16">
+                  <h2>₹ 15</h2>
+                  <span class="w3-opacity">per month</span>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                  <button class="w3-button w3-teal w3-padding-large w3-hover-black" onclick="basic()">Sign Up</button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="w3-third">
+              <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+                <li class="w3-padding-16">Web Design</li>
+                <li class="w3-padding-16">Vedio Editing</li>
+                <li class="w3-padding-16">Photoshop</li>
+                <li class="w3-padding-16">Unlimited Storage</li>
+                <li class="w3-padding-16">Endless Support</li>
+                <li class="w3-padding-16">
+                  <h2>₹ 25</h2>
+                  <span class="w3-opacity">per month</span>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                  <button class="w3-button w3-teal w3-padding-large w3-hover-black" onclick="basic()">Sign Up</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Vertically centered modal -->
+        <!-- Contact Section -->
+        
+      
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-dark-grey">
+        <div class="w3-row-padding">
+          <div class="w3-third">
+            <img src="img200.png" alt="" class="imgfooter">
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p>Powered by Omkar</p>
+          </div>
+        
+          <div class="w3-third">
+            <h3>BLOG POSTS</h3>
+            <ul class="w3-ul w3-hoverable">
+              <li class="w3-padding-16">
+                <img src="bloglogo.png" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Our Company</span><br>
+                <span>Sed mattis nunc</span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="bloglogo.png" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">About Team</span><br>
+                <span>Praes tinci sed</span>
+              </li> 
+            </ul>
+          </div>
+      
+          <div class="w3-third">
+            <h3>POPULAR TAGS</h3>
+            <p>
+              <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">India</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+            </p>
+          </div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Message For Help</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Send Errors</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Report</button>
+          
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Recipient:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+        </footer>
+        
+        <div class="w3-black w3-center w3-padding-24">Powered by Omkar</div>
+      
+      <!-- End page content -->
+      </div>
+      <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = '3585ec2f693c8d66ebc819457d4252d48ac7aa2f';
+        window.smartsupp||(function(d) {
+          var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+          s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+          c.type='text/javascript';c.charset='utf-8';c.async=true;
+          c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+        })(document);
+        </script>
+      <script>
+      // Script to open and close sidebar
+      function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+      }
+       
+      function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+      }
+      const exampleModal = document.getElementById('exampleModal')
+        exampleModal.addEventListener('show.bs.modal', event => {
+  // Button that triggered the modal
+          const button = event.relatedTarget
+  // Extract info from data-bs-* attributes
+          const recipient = button.getAttribute('data-bs-whatever')
+  // If necessary, you could initiate an AJAX request here
+  // and then do the updating in a callback.
+  //
+  // Update the modal's content.
+          const modalTitle = exampleModal.querySelector('.modal-title')
+          const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+          modalTitle.textContent = `New message to ${recipient}`
+          modalBodyInput.value = recipient
+        })
+
+      </script>
+      
+      
+</body>
+</html>

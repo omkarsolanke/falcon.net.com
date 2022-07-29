@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Login / Sign Up</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel = "icon" href = "img0001.png" type = "image/x-icon">
+    <script src="https://use.fontawesome.com/f06cf1997e.js"></script>
+    <script>
+        function validate() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == "admin" && password == "admin") {
+                alert("Login successfully");
+                let d = new Date();
+                document.body.innerHTML = "<h1>Today's date is " + d + "</h1>";
+                window.location = "home.html"; // Redirecting to other page.
+                return false;
+            }
+            else {
+                alert("Try Again or Sometime")
+                let d = new Date();
+                document.body.innerHTML = "<h1>Today's date is " + d + "</h1>";
+                window.location = "login.html";
+            }
+        }
+        </script>
+</head>
+
+<style>
+    body {
+        --color-primary: #009579;
+        --color-primary-dark: #007f67;
+        --color-secondary: #252c6a;
+        --color-error: #cc3333;
+        --color-success: #4bb544;
+        --border-radius: 4px;
+
+        margin: 0;
+        height: 100vh;
+        font-size: 18px;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.91);
+
+    }
+
+    
+
+
+    .container {
+        padding: 2em 2em 0.5em;
+        align-items: center;
+        display: flex;
+        margin: 8em auto;
+
+    }
+
+    .container,
+    .form__input,
+    .form__button {
+        font: 500 1rem 'Quicksand', sans-serif;
+    }
+
+    .form--hidden {
+        display: none;
+    }
+
+    .form>*:first-child {
+        margin-top: 0;
+    }
+
+    .form>*:last-child {
+        margin-bottom: 0;
+    }
+
+    .form__title {
+        font-size: 50px;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-style: italic;
+        font-family: initial;
+    }
+
+
+    .form__message {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .form__message--success {
+        color: var(--color-success);
+    }
+
+    .form__message--error {
+        color: var(--color-error);
+    }
+
+    .form__input-group {
+        margin-bottom: 1rem;
+    }
+
+    .form__input {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        box-sizing: border-box;
+        border-radius: var(--border-radius);
+        border: 1px solid #dddddd;
+        outline: none;
+        background: #eeeeee;
+        transition: background 0.2s, border-color 0.2s;
+    }
+
+    .form__input:focus {
+        border-color: var(--color-primary);
+        background: #ffffff;
+    }
+
+    .form__input--error {
+        color: var(--color-error);
+        border-color: var(--color-error);
+    }
+
+    .form__input-error-message {
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+        color: var(--color-error);
+    }
+
+    .form__button {
+        width: 100%;
+        padding: 1rem 2rem;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #ffffff;
+        border: none;
+        border-radius: var(--border-radius);
+        outline: none;
+        cursor: pointer;
+        background: var(--color-primary);
+    }
+
+    .form__button:hover {
+        background: var(--color-primary-dark);
+    }
+
+    .form__button:active {
+        transform: scale(0.98);
+    }
+
+    .form__text {
+        text-align: center;
+    }
+
+    .form__link {
+        color:#ededee;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .form__link:hover {
+        text-decoration: underline;
+    }
+
+    .alert.alert-danger {
+        text-align: left;
+        color: red;
+        padding: 10%;
+        border: turquoise;
+        border-radius: 10px;
+        background: skyblue;
+    }
+
+    .input-field i.showHidePw {
+        right: 0;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .gradient-text {
+        background: -webkit-linear-gradient(270deg,#dae104,#cf0f0f);
+        background-clip: border-box;
+        background-clip: initial;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-style: oblique;
+        font-family: initial;
+      }
+      .gradient-text {
+        text-align: center;
+        font-size: xxx-large;
+      }
+      .pass{
+        color: red;
+        width:10px;
+        
+      }
+      
+    
+</style>
+
+<body>
+    <p class="pass">*Default Username and Password is "admin"</p>
+    <div class="container" id="cont">
+        <form class="form" id="login" method="post">
+            <h1 class="gradient-text">WELCOME</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" name="username" class="form__input" id="username" autofocus placeholder="Username" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" name="password" class="form__input" id="password" autofocus placeholder="Password" required>
+                <div class="form__input-error-message"></div>
+                <i class="uil uil-lock icon"></i>
+                <i class="uil uil-eye-slash showHidePw"></i>
+            </div>
+            <button class="form__button" type="submit" name="submit" placeholder="VERIFY" onclick="validate()">Log
+                In</button>
+            <p class="form__text">
+                <a href="forgot.html" class="form__link">Forgot your password?</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="sign.html" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>  
+    </div>
+</body>
+
+</html>
